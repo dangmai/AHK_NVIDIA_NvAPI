@@ -6,7 +6,7 @@ SetWorkingDir, %A_ScriptDir%
 Monitor := 1
 VibranceSettings := [50, 100]
 
-Index := 0
+Index := 1
 
 ^!+j::
     Index := Mod(Index, VibranceSettings.MaxIndex()) + 1
