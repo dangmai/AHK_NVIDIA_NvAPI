@@ -3,7 +3,7 @@ SendMode Input
 SetWorkingDir, %A_ScriptDir%
 
 #Include Class_NvAPI.ahk
-Monitor := 1
+SysGet, Monitor, MonitorPrimary
 VibranceSettings := [50, 100]
 
 Index := 1
