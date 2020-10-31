@@ -8,7 +8,6 @@ VibranceSettings := [50, 100]
 Index := 1
 
 ^!+j::
-    SysGet, Monitor, MonitorPrimary
     Index := Mod(Index, VibranceSettings.MaxIndex()) + 1
-    NvAPI.SetDVCLevelEx(VibranceSettings[Index], Monitor)
+    NvAPI.SetDVCLevelEx(VibranceSettings[Index], 0)
 return
